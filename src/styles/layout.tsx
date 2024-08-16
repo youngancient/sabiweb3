@@ -7,10 +7,11 @@ export const LayoutStyles = styled.div<IBgTheme>`
   align-items: center;
   position: relative;
   background: #575a89;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   gap: 3rem;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   .one,
   .two {
     position: absolute;

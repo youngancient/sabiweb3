@@ -62,8 +62,11 @@ export const Main = () => {
   }, [dispatch, questionNoDropdownlist]);
   return (
     <MainStyles>
-      <h1>TECHIE QUIZ</h1>
+      <h1>WEB3 QUIZ</h1>
       <FormLayout />
+      <div className="btm-word">
+        <h1>&copy;WEB3 QUIZ</h1>
+      </div>
     </MainStyles>
   );
 };
@@ -105,7 +108,7 @@ export const Intro = () => {
           <DropDown />
         </div>
         <button type="button" onClick={startQuiz}>
-          Start Quiz
+          Test Yourself 🫵🏾
         </button>
       </div>
     </WelcomeStyles>
@@ -361,11 +364,8 @@ const getLetter = (num: number) => {
 };
 export const Option: FunctionComponent<IOption> = ({ id, text }) => {
   const dispatch = useAppDispatch();
-  const {
-    selectedOption,
-    isQuestionAnswered,
-    selectedQuestionAnswerId,
-  } = useAppSelector(dataSelector);
+  const { selectedOption, isQuestionAnswered, selectedQuestionAnswerId } =
+    useAppSelector(dataSelector);
   const [isCorrect, setIsCorrect] = useState<boolean | undefined>();
 
   // I need a 0.75s timer which would switch states from the selected question to like mark wrong and mark correctly

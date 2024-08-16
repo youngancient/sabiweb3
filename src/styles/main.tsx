@@ -15,6 +15,18 @@ export const MainStyles = styled.main`
     color: #fff;
     font-size: 2.25rem;
   }
+  .btm-word {
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
   @media (max-width: 998px) {
     width: 60%;
     h1 {
@@ -25,7 +37,7 @@ export const MainStyles = styled.main`
     width: 80%;
   }
   @media (max-width: 500px) {
-    h1{
+    h1 {
       font-size: 1.9rem;
     }
     max-width: 348px;
@@ -68,7 +80,8 @@ export const WelcomeStyles = styled(motion.div).attrs<ICodeStyle>(() => ({
     width: 100%;
     fill: ${(props) => props.color};
   }
-  h2, h3 {
+  h2,
+  h3 {
     color: #1d355d;
     font-family: Raleway;
     font-size: 2.5rem;
@@ -124,7 +137,7 @@ export const WelcomeStyles = styled(motion.div).attrs<ICodeStyle>(() => ({
   }
 `;
 
-export const ResultStyles = styled(motion.div).attrs(()=>({
+export const ResultStyles = styled(motion.div).attrs(() => ({
   initial: "initial",
   animate: "final",
   exit: "exit",
@@ -338,7 +351,7 @@ export const QuestionStyle = styled(motion.div).attrs<IQuestionStyles>(() => ({
     height: 64px;
     object-fit: cover;
   }
-  .no-img{
+  .no-img {
     height: 40px;
     border: 2px solid #000;
   }
@@ -351,7 +364,7 @@ export const QuestionStyle = styled(motion.div).attrs<IQuestionStyles>(() => ({
     font-family: DM Sans;
     color: #1d355d;
     font-family: DM Sans;
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -422,6 +435,7 @@ export const OptionStyle = styled(motion.button)<IOptionStyle>`
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
+    text-align: left;
     line-height: normal;
   }
   @keyframes blinkey {
