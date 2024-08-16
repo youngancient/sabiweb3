@@ -409,7 +409,7 @@ export interface IOptionStyle {
 }
 export const OptionStyle = styled(motion.button)<IOptionStyle>`
   display: flex;
-  height: 3.5rem;
+  min-height: 3.5rem;
   border-radius: 0.75rem;
   border: 2px solid rgba(96, 102, 208, 0.7);
   background: #fff;
