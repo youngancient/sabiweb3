@@ -1,4 +1,4 @@
-# techieQuiz
+# sabiWeb3
 
 A fun and interactive quiz that helps techies get familiar with the tech space in Nigeria built with React x Typescript!🤗
     
@@ -7,13 +7,13 @@ A fun and interactive quiz that helps techies get familiar with the tech space i
 Clone the project
 
 ```bash
-  git clone https://github.com/youngancient/techieQuiz.git
+  git clone https://github.com/youngancient/sabiWeb3.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd techieQuiz
+  cd sabiWeb3
 ```
 
 Install dependencies
@@ -84,5 +84,5 @@ Connect with me on Social Media!
   
 ## Thank you
 
-Thank you for checking out techieQuiz app. If you like the project, leave a Star!
+Thank you for checking out sabiWeb3 app. If you like the project, leave a Star!
   
