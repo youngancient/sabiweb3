@@ -1,6 +1,8 @@
-# sabiWeb3
+# SabiWeb3
 
 A fun and interactive quiz that helps techies get familiar with web3. Built with React x Typescript!🤗
+
+![QuizPage](https://github.com/user-attachments/assets/bb9c9e7a-4190-4686-9aae-ed7752f153fd)
 
 ## Run Locally
 
