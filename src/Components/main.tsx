@@ -394,11 +394,9 @@ export const Option: FunctionComponent<IOption> = ({ id, text }) => {
     dispatch(setSelectedOption(option));
 
     setTimeout(() => {
-      if (selectedQuestionAnswerId === id) {
-        //pass
-      } else {
+      if (selectedQuestionAnswerId != id) {
         dispatch(setPlayWrongAnswerSound(true));
-      }
+      } 
     }, 750);
   };
 
