@@ -1,19 +1,19 @@
 # sabiWeb3
 
-A fun and interactive quiz that helps techies get familiar with the tech space in Nigeria built with React x Typescript!🤗
-    
+A fun and interactive quiz that helps techies get familiar with web3. Built with React x Typescript!🤗
+
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/youngancient/sabiWeb3.git
+  git clone https://github.com/youngancient/sabiweb3.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd sabiWeb3
+  cd sabiweb3
 ```
 
 Install dependencies
@@ -28,18 +28,6 @@ Start the server
   yarn dev
 ```
 
-  
-  
-## Screenshots
-
-
-![home](https://github.com/youngancient/techieQuiz/assets/93747805/f1fab91a-ef71-45d5-99b8-dd7a120ee6c0)
-
-![playing](https://github.com/youngancient/techieQuiz/assets/93747805/4d5f5042-5831-46d5-b085-8d883f117a44)
-
-![techie-quiz3](https://github.com/youngancient/techieQuiz/assets/93747805/aa14dd4d-d289-41ed-96b3-20792ca04b39)
-
-
 ## Contributing
 
 Contributions are always welcome!
@@ -47,18 +35,17 @@ Contributions are always welcome!
 Fork the project, make your changes, and submit a pull request!
 
 ## Contributors
-  - @Youngancient
-  - @AdedoyinEmmanuel
-  
+
+- @Youngancient
+- @AdedoyinEmmanuel
+
 ## Demo
 
-Live Site - https://techiequiz.vercel.app/
-
-
+Live Site - https://sabiweb3.vercel.app/
 
 The site in action-
 (to be updated!)
-  
+
 ## User Stories
 
 This project fulfilled the following user stories:
@@ -72,8 +59,6 @@ This project fulfilled the following user stories:
 - When I finish, I see the results
 - I can try again
 
-
-  
 ## 🔗 Links
 
 Connect with me on Social Media!
@@ -81,8 +66,6 @@ Connect with me on Social Media!
 - [Linkedin](https://linkedin.com/in/jude-tochy-922492227/)
 - [Twitter](https://twitter.com/judetochyx)
 
-  
 ## Thank you
 
 Thank you for checking out sabiWeb3 app. If you like the project, leave a Star!
-  

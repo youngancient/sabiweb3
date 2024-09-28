@@ -220,6 +220,7 @@ export const DropDownItem: FunctionComponent<IDropdownItem> = ({
     </DropdownItemStyles>
   );
 };
+
 export const FormLayout = () => {
   const { hasStarted, questions, hasEnded } = useAppSelector(dataSelector);
   return (
@@ -231,15 +232,10 @@ export const FormLayout = () => {
           </div>
           <div className="contents">
             {hasStarted &&
-              questions.map((ele: any, index: number) => (
+              questions.map((ele: any) => (
                 <Question
-                  id={ele.id}
-                  img={ele.img}
-                  question={ele.question}
-                  options={ele.options}
-                  answer={ele.answer}
-                  key={index}
-                  attemptQuestion={ele.attemptQuestion}
+                  {...ele}
+                  key={ele.id}
                 />
               ))}
             {!hasStarted && <Intro />}
@@ -254,10 +250,12 @@ export const FormLayout = () => {
     </>
   );
 };
+
 const calculatePercent = (score: number, total: number) => {
   const value = (score * 100) / total;
   return Math.round((value + Number.EPSILON) * 100) / 100;
 };
+
 export const Result = () => {
   const { playerScore, numberOfQuestionsSelected } =
     useAppSelector(dataSelector);
@@ -272,6 +270,7 @@ export const Result = () => {
     dispatch(setHasEnded(false));
     dispatch(setHasStarted(false));
   };
+
   return (
     <ResultStyles>
       <img src="/result.svg" alt="result" />
@@ -301,7 +300,9 @@ export const Question: FunctionComponent<IQuestion> = ({
 }) => {
   const { isQuestionAnswered, hasFinishedQuestions } =
     useAppSelector(dataSelector);
+
   const dispatch = useAppDispatch();
+
   useEffect(() => {
     if (attemptQuestion) {
       dispatch(setSelectedQuestionAnswerId(answer));
@@ -362,13 +363,14 @@ const getLetter = (num: number) => {
     return "D";
   }
 };
+
 export const Option: FunctionComponent<IOption> = ({ id, text }) => {
   const dispatch = useAppDispatch();
   const { selectedOption, isQuestionAnswered, selectedQuestionAnswerId } =
     useAppSelector(dataSelector);
   const [isCorrect, setIsCorrect] = useState<boolean | undefined>();
 
-  // I need a 0.75s timer which would switch states from the selected question to like mark wrong and mark correctly
+  //  0.75s timer which switches states from the selected question to like mark wrong and mark correctly
   useEffect(() => {
     if (selectedOption) {
       setTimeout(() => {
